@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Meu Projeto</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Menu</h2>
+  
+    <div class="menu-container">
+      <!-- Botão abre/fecha -->
+      <button id="menuToggle" class="icon-btn" aria-expanded="false">
+        <!-- imagem abrir -->
+        <img src="./imgs/images__1_-removebg-preview.png" alt="Abrir menu" class="icon-open" width="30" height="30">
+        <!-- imagem fechar -->
+        <img src="./imgs/images__2_-removebg-preview.png" alt="Fechar menu" class="icon-close" width="30" height="30" style="display:none;">
+      </button>
+  
+      <!-- Itens escondidos -->
+      <ul id="menuOptions" class="menu-options">
+        <li>⚙️ Autor</li>
+        <li>📞 Contato</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>@pedrxy_cand 2025</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

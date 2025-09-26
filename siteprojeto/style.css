@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%; /* ocupa altura total da tela */
+  }
+  
+  body {
+    background-color: #333;
+    display: flex;
+    flex-direction: column; /* cabeçalho > main > footer em coluna */
+    min-height: 100vh;      /* garante altura mínima igual à tela */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #000000;
+    color: #ffffff;
+    padding: 1rem;
+    
+    display: flex;
+    justify-content: center;  /* centraliza no eixo horizontal */
+    align-items: center;      /* centraliza no eixo vertical */
+    flex-direction: column;   /* empilha título e menu */
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: #848484;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: 1s;
+  }
+  
+  nav a:hover {
+    background: #ffffff;
+    border-radius: 5px;
+  }
+  
+  /* Main */
+  main {
+    flex: 1; /* faz o main crescer e empurra o footer para baixo */
+    padding: 2rem;
+  }
+  
+  /* Select estilizado */
+  select {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+
+  select {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff4f; /* cor do botão */
+    color: rgb(255, 255, 255);              /* cor do texto */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  /* Cor ao passar o mouse */
+  select:hover {
+    background-color: #cdcdcd00;
+  }
+  
+  /* Opcional: cor quando selecionado */
+  select:focus {
+    outline: none;
+    background-color: #15001e;
+  }
+  
+  /* Rodapé */
+  footer {
+    background: #222;
+    color: #aa00ff;
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .icon-btn {
+    background: #444;
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+    cursor: pointer;
+  }
+  
+  .icon-btn img {
+    display: block;
+  }
+  
+  .menu-options {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: #f4f4f4;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    width: 160px;
+    list-style: none;
+    margin: 8px 0 0 0;
+    padding: 0;
+    z-index: 10;
+  }
+  
+  .menu-options li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .menu-options li:hover {
+    background: #ddd;
+  }
+  
+  .menu-options li:last-child {
+    border-bottom: none;
+  }
+  
