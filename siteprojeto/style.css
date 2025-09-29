@@ -86,6 +86,17 @@
     outline: none;
     background-color: #15001e;
   }
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .bottom-img {
+    max-width: 300px;
+    height: auto;
+  }
   
   /* Rodapé */
   footer {
