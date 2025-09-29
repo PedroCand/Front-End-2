@@ -1,0 +1,90 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #111;
+    color: #fff;
+  }
+  
+  /* Cabeçalho principal */
+  .top-header {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .top-header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  /* Cabeçalho secundário */
+  .sub-header {
+    background: #222;
+    padding: 10px;
+  }
+  
+  .sub-header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .sub-header nav ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .sub-header nav ul li a:hover {
+    color: #fff;
+  }
+  
+  /* Conteúdo principal */
+  main {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Galeria de imagens */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  }
+  
+  /* Rodapé */
+  footer {
+    background: #000;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    color: #aaa;
+  }
+  
