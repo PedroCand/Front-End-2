@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #111;
+  color: #ffffff;
+}
+
+.top-header {
+  background: #000000;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.top-header h1 {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 10px rgb(38, 0, 255), 0 0 20px rgb(255, 255, 255);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #b4b4b4;
+  font-weight: bold;
+  text-shadow: 0 0 7px rgb(255, 255, 255);
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(76, 0, 255);
+}
+
+.card p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: rgb(254, 253, 255);
+  text-shadow: 0 0 7px rgb(255, 255, 255);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 2px rgb(0, 0, 0), 0 0 10px rgb(76, 0, 255);
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 15px;
+  color: #aaa;
+}
