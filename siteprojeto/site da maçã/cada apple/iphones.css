@@ -85,6 +85,49 @@ main {
   box-shadow: 0 0 2px rgb(0, 0, 0), 0 0 10px rgb(76, 0, 255);
 }
 
+.table-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.table-box {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+  min-width: 250px;
+}
+
+.table-box h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #6cf;
+  text-shadow: 0 0 8px #6cf;
+}
+
+.table-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.table-box ul li {
+  background: #222;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s, transform 0.2s;
+}
+
+.table-box ul li:hover {
+  background: #6cf;
+  color: #000;
+  transform: scale(1.05);
+}
+
+
 footer {
   background: #000;
   text-align: center;
